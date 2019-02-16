@@ -32,9 +32,9 @@ public class ControlaInterface : MonoBehaviour{
         SliderVidaJogador.value = scriptControlaJogador.statusJogador.Vida;
     }
 
-    public void AtualizarQuantidadeDeZumbisMortos ()
+    public void AtualizaQuantidadeDePontos (int pontos)
     {
-        quantidadeDeZumbisMortos++;
+        quantidadeDeZumbisMortos+= pontos;
         TextoQuantidadeDeZumbisMortos.text = string.Format("x {0}", quantidadeDeZumbisMortos);
     }
 
