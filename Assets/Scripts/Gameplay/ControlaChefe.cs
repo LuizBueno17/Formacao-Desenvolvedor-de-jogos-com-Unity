@@ -17,6 +17,9 @@ public class ControlaChefe : MonoBehaviour, IMatavel, IReservavel
     public Color CorDaVidaMaxima, CorDaVidaMinima;
     public GameObject ParticulaSangueZumbi;
     private IReservaDeObjetos reserva;
+    private ControlaInterface scriptControlaInterface;
+    [SerializeField]
+    private int pontos;
 
     private void Awake()
     {
@@ -31,6 +34,7 @@ public class ControlaChefe : MonoBehaviour, IMatavel, IReservavel
         agente.speed = statusChefe.Velocidade;
         sliderVidaChefe.maxValue = statusChefe.VidaInicial;
         AtualizarInterface();
+        scriptControlaInterface = GameObject.FindObjectOfType(typeof(ControlaInterface)) as ControlaInterface;
     }
 
     public void SetPosicao(Vector3 posicao)
@@ -85,6 +89,7 @@ public class ControlaChefe : MonoBehaviour, IMatavel, IReservavel
     {
         animacaoChefe.Morrer();
         movimentoChefe.Morrer();
+        scriptControlaInterface.AtualizaQuantidadeDePontos(this.pontos);
         this.enabled = false;
         agente.enabled = false;
         Instantiate(KitMedicoPrefab, transform.position, Quaternion.identity);

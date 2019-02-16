@@ -20,6 +20,8 @@ public class ControlaInimigo : MonoBehaviour, IMatavel, IReservavel
     [HideInInspector]
     public GeradorZumbis meuGerador;
     public GameObject ParticulaSangueZumbi;
+    [SerializeField]
+    private int pontos;
 
     private IReservaDeObjetos reserva;
   
@@ -130,7 +132,7 @@ public class ControlaInimigo : MonoBehaviour, IMatavel, IReservavel
         this.enabled = false;
         ControlaAudio.instancia.PlayOneShot(SomDeMorte);
         VerificarGeracaoKitMedico(porcentagemGerarKitMedico);
-        scriptControlaInterface.AtualizarQuantidadeDeZumbisMortos();
+        scriptControlaInterface.AtualizaQuantidadeDePontos(this.pontos);
         
     }
 
