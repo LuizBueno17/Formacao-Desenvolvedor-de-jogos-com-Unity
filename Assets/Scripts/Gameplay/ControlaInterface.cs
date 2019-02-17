@@ -40,15 +40,14 @@ public class ControlaInterface : MonoBehaviour{
 
     public void GameOver ()
     {
-        PainelDeGameOver.SetActive(true);
-        Time.timeScale = 0;
+        SceneManager.LoadScene("GameOver");
 
-        int minutos = (int)(Time.timeSinceLevelLoad / 60);
-        int segundos = (int)(Time.timeSinceLevelLoad % 60);
-        TextoTempoDeSobrevivencia.text = 
-            "Você sobreviveu por " + minutos + "min e " + segundos + "s";
+        //int minutos = (int)(Time.timeSinceLevelLoad / 60);
+        //int segundos = (int)(Time.timeSinceLevelLoad % 60);
+        //TextoTempoDeSobrevivencia.text = 
+        //    "Você sobreviveu por " + minutos + "min e " + segundos + "s";
 
-        AjustarPontuacaoMaxima(minutos, segundos);
+        //AjustarPontuacaoMaxima(minutos, segundos);
     }
 
     void AjustarPontuacaoMaxima (int min, int seg)
