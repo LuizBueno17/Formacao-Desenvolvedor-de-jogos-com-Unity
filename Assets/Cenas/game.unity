@@ -11716,11 +11716,6 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 114135333458066176, guid: 4b3bb44effa49480d8d18049684cc33a,
-        type: 3}
-      propertyPath: SomDeCura
-      value: 
-      objectReference: {fileID: 8300000, guid: bb0c8796fce64444fa57a7f37ce6740d, type: 3}
     - target: {fileID: 114240463659201816, guid: 4b3bb44effa49480d8d18049684cc33a,
         type: 3}
       propertyPath: SomDoTiro
