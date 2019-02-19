@@ -14,6 +14,8 @@ public class ControlaJogador : MonoBehaviour, IMatavel, ICuravel
     private MovimentoJogador meuMovimentoJogador;
     private AnimacaoPersonagem animacaoJogador;
     public Status statusJogador;
+    [SerializeField]
+    private AudioClip SomDeCura;
 
     private void Start()
     {
@@ -60,5 +62,6 @@ public class ControlaJogador : MonoBehaviour, IMatavel, ICuravel
             statusJogador.Vida = statusJogador.VidaInicial;
         }
         scriptControlaInterface.AtualizarSliderVidaJogador();
+        ControlaAudio.instancia.PlayOneShot(SomDeCura);
     }
 }
