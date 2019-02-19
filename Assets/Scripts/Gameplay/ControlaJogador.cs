@@ -2,6 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class ControlaJogador : MonoBehaviour, IMatavel, ICuravel
 {
@@ -49,9 +50,8 @@ public class ControlaJogador : MonoBehaviour, IMatavel, ICuravel
 
     public void Morrer ()
     {
-        scriptControlaInterface.GameOver();
+        SceneManager.LoadScene("GameOver");
     }
-
     public void CurarVida (int quantidadeDeCura)
     {
         statusJogador.Vida += quantidadeDeCura;
