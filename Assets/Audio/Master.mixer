@@ -38,6 +38,7 @@ AudioMixerGroupController:
   m_AudioMixer: {fileID: 24100000}
   m_GroupID: d1bdf303247384f46800071dee6ffda1
   m_Children:
+  - {fileID: 243708450520582244}
   - {fileID: 243285658381160232}
   m_Volume: a0d0eabf91beba64b85d990dd7b1bfcb
   m_Pitch: 6bbe96578961d5847b87522dcd3c8e83
@@ -82,8 +83,7 @@ AudioMixerGroupController:
   m_Name: "M\xFAsica"
   m_AudioMixer: {fileID: 24100000}
   m_GroupID: 37cc7b6477907274b9eff8ec749ded8f
-  m_Children:
-  - {fileID: 243708450520582244}
+  m_Children: []
   m_Volume: 220d44a162f4c904789724877f8613bf
   m_Pitch: 3d91723a24c386a4aa7562ea1e3fa731
   m_Effects:
