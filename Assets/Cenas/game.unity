@@ -12865,6 +12865,8 @@ GameObject:
   - component: {fileID: 1320272342}
   - component: {fileID: 1320272341}
   - component: {fileID: 1320272345}
+  - component: {fileID: 1320272347}
+  - component: {fileID: 1320272346}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -12974,6 +12976,31 @@ MonoBehaviour:
   TextoPontuacaoMaxima: {fileID: 1985104275}
   TextoQuantidadeDeZumbisMortos: {fileID: 417459470}
   TextoChefeAparece: {fileID: 1915470987}
+--- !u!114 &1320272346
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1320272340}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 49dbffcbb493c3c42b13565d65d99860, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sobrescreverExiste: 0
+--- !u!114 &1320272347
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1320272340}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 632eed1ce8588564e9488b2f358266eb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1327135882
 PrefabInstance:
   m_ObjectHideFlags: 0
