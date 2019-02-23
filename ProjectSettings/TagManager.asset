@@ -9,6 +9,8 @@ TagManager:
   - ChefeDeFase
   - "VolumeDaM\xFAsica"
   - VolumeSFX
+  - Pistola
+  - MPSMG
   layers:
   - Default
   - TransparentFX
