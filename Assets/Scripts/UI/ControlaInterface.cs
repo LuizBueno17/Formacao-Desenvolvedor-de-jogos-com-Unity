@@ -4,7 +4,8 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
-public class ControlaInterface : MonoBehaviour{
+public class ControlaInterface : MonoBehaviour
+{
 
     private ControlaJogador scriptControlaJogador;
     public Slider SliderVidaJogador;
@@ -13,9 +14,12 @@ public class ControlaInterface : MonoBehaviour{
     private int quantidadeDeZumbisMortos;
     public Text TextoQuantidadeDeZumbisMortos;
     public Text TextoChefeAparece;
+    [SerializeField]
+    private GameObject botaoTrocaArma;
 
-	// Use this for initialization
-	void Start () {
+    // Use this for initialization
+    void Start()
+    {
         scriptControlaJogador = GameObject.FindWithTag("Jogador")
                                 .GetComponent<ControlaJogador>();
 
@@ -23,28 +27,31 @@ public class ControlaInterface : MonoBehaviour{
         AtualizarSliderVidaJogador();
         Time.timeScale = 1;
         tempoPontuacaoSalvo = PlayerPrefs.GetFloat("PontuacaoMaxima");
+        #if PLATFORM_ANDROID
+        botaoTrocaArma.SetActive(true);
+        #endif
     }
 
-    public void AtualizarSliderVidaJogador ()
+    public void AtualizarSliderVidaJogador()
     {
         SliderVidaJogador.value = scriptControlaJogador.statusJogador.Vida;
     }
 
-    public void AtualizaQuantidadeDePontos (int pontos)
+    public void AtualizaQuantidadeDePontos(int pontos)
     {
-        quantidadeDeZumbisMortos+= pontos;
+        quantidadeDeZumbisMortos += pontos;
         TextoQuantidadeDeZumbisMortos.text = string.Format("x {0}", quantidadeDeZumbisMortos);
     }
-    void AjustarPontuacaoMaxima (int min, int seg)
+    void AjustarPontuacaoMaxima(int min, int seg)
     {
-        if(Time.timeSinceLevelLoad > tempoPontuacaoSalvo)
+        if (Time.timeSinceLevelLoad > tempoPontuacaoSalvo)
         {
             tempoPontuacaoSalvo = Time.timeSinceLevelLoad;
-            TextoPontuacaoMaxima.text = 
+            TextoPontuacaoMaxima.text =
                 string.Format("Seu melhor tempo é {0}min e {1}s", min, seg);
             PlayerPrefs.SetFloat("PontuacaoMaxima", tempoPontuacaoSalvo);
         }
-        if(TextoPontuacaoMaxima.text == "")
+        if (TextoPontuacaoMaxima.text == "")
         {
             min = (int)tempoPontuacaoSalvo / 60;
             seg = (int)tempoPontuacaoSalvo % 60;
@@ -53,17 +60,17 @@ public class ControlaInterface : MonoBehaviour{
         }
     }
 
-    public void Reiniciar ()
+    public void Reiniciar()
     {
         SceneManager.LoadScene("game");
     }
 
-    public void AparecerTextoChefeCriado ()
+    public void AparecerTextoChefeCriado()
     {
         StartCoroutine(DesaparecerTexto(2, TextoChefeAparece));
     }
 
-    IEnumerator DesaparecerTexto (float tempoDeSumico, Text textoParaSumir)
+    IEnumerator DesaparecerTexto(float tempoDeSumico, Text textoParaSumir)
     {
         textoParaSumir.gameObject.SetActive(true);
         Color corTexto = textoParaSumir.color;
@@ -76,7 +83,7 @@ public class ControlaInterface : MonoBehaviour{
             contador += Time.deltaTime / tempoDeSumico;
             corTexto.a = Mathf.Lerp(1, 0, contador);
             textoParaSumir.color = corTexto;
-            if(textoParaSumir.color.a <= 0)
+            if (textoParaSumir.color.a <= 0)
             {
                 textoParaSumir.gameObject.SetActive(false);
             }

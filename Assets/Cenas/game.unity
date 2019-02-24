@@ -10797,7 +10797,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &985754398
 RectTransform:
   m_ObjectHideFlags: 0
@@ -13181,6 +13181,7 @@ MonoBehaviour:
   TextoPontuacaoMaxima: {fileID: 1985104275}
   TextoQuantidadeDeZumbisMortos: {fileID: 417459470}
   TextoChefeAparece: {fileID: 1915470987}
+  botaoTrocaArma: {fileID: 985754397}
 --- !u!114 &1320272346
 MonoBehaviour:
   m_ObjectHideFlags: 0
