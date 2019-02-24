@@ -1266,9 +1266,8 @@ PrefabInstance:
     - target: {fileID: 114875949034787928, guid: 6bc057c9c31344144820fa28af2133b0,
         type: 3}
       propertyPath: TempoGerarZumbi
-      value: 
-      objectReference: {fileID: 11400000, guid: 5692fe9ab096d8946acfd11d937fc31f,
-        type: 2}
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6bc057c9c31344144820fa28af2133b0, type: 3}
 --- !u!1001 &210539214
@@ -2320,9 +2319,8 @@ PrefabInstance:
     - target: {fileID: 114875949034787928, guid: 6bc057c9c31344144820fa28af2133b0,
         type: 3}
       propertyPath: TempoGerarZumbi
-      value: 
-      objectReference: {fileID: 11400000, guid: 5692fe9ab096d8946acfd11d937fc31f,
-        type: 2}
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6bc057c9c31344144820fa28af2133b0, type: 3}
 --- !u!1001 &387543077
@@ -2487,9 +2485,8 @@ PrefabInstance:
     - target: {fileID: 114875949034787928, guid: 6bc057c9c31344144820fa28af2133b0,
         type: 3}
       propertyPath: TempoGerarZumbi
-      value: 
-      objectReference: {fileID: 11400000, guid: 5692fe9ab096d8946acfd11d937fc31f,
-        type: 2}
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6bc057c9c31344144820fa28af2133b0, type: 3}
 --- !u!4 &392394359 stripped
@@ -4767,9 +4764,8 @@ PrefabInstance:
     - target: {fileID: 114875949034787928, guid: 6bc057c9c31344144820fa28af2133b0,
         type: 3}
       propertyPath: TempoGerarZumbi
-      value: 
-      objectReference: {fileID: 11400000, guid: 5692fe9ab096d8946acfd11d937fc31f,
-        type: 2}
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6bc057c9c31344144820fa28af2133b0, type: 3}
 --- !u!1001 &781170044
@@ -5526,9 +5522,8 @@ PrefabInstance:
     - target: {fileID: 114875949034787928, guid: 6bc057c9c31344144820fa28af2133b0,
         type: 3}
       propertyPath: TempoGerarZumbi
-      value: 
-      objectReference: {fileID: 11400000, guid: 5692fe9ab096d8946acfd11d937fc31f,
-        type: 2}
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6bc057c9c31344144820fa28af2133b0, type: 3}
 --- !u!4 &882424272 stripped
@@ -13731,9 +13726,8 @@ PrefabInstance:
     - target: {fileID: 114875949034787928, guid: 6bc057c9c31344144820fa28af2133b0,
         type: 3}
       propertyPath: TempoGerarZumbi
-      value: 
-      objectReference: {fileID: 11400000, guid: 5692fe9ab096d8946acfd11d937fc31f,
-        type: 2}
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6bc057c9c31344144820fa28af2133b0, type: 3}
 --- !u!1001 &1433841060
@@ -14833,9 +14827,8 @@ PrefabInstance:
     - target: {fileID: 114875949034787928, guid: 6bc057c9c31344144820fa28af2133b0,
         type: 3}
       propertyPath: TempoGerarZumbi
-      value: 
-      objectReference: {fileID: 11400000, guid: 5692fe9ab096d8946acfd11d937fc31f,
-        type: 2}
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6bc057c9c31344144820fa28af2133b0, type: 3}
 --- !u!1001 &1638094204
