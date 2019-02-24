@@ -20386,6 +20386,11 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 987321325181565668, guid: 4171fca255cbe194590cd1d9800a937e,
+        type: 3}
+      propertyPath: sobrescreverExiste
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 987321325074372106, guid: 4171fca255cbe194590cd1d9800a937e,
         type: 3}
       propertyPath: m_AnchorMax.x
