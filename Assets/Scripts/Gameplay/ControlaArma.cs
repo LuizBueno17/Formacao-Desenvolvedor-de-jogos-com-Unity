@@ -1,42 +1,37 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class ControlaArma : MonoBehaviour
 {
-
-    public ReservaExtensivel reservaDeBalas;
-    public GameObject CanoDaArma;
-    public AudioClip SomDoTiro;
     [SerializeField]
     private GameObject Pistola;
     [SerializeField]
     private GameObject MPSMG;
-    private void Update()
+    [SerializeField]
+    private Text nomeArma;
+    private void Start()
     {
-        var toquesNaTela = Input.touches;
-        foreach(var toque in toquesNaTela)
-        {
-            if(toque.phase == TouchPhase.Began)
-            {
-                this.Atirar();
-                ControlaAudio.instancia.PlayOneShot(SomDoTiro);
-            }
-        }
-      
+        TextoNomeArma();
     }
     public void TrocarArma()
     {
         Pistola.SetActive(!Pistola.activeInHierarchy);
         MPSMG.SetActive(!MPSMG.activeInHierarchy);
+        TextoNomeArma();
     }
-    private void Atirar()
+    private void TextoNomeArma()
     {
-        if (this.reservaDeBalas.TemObjeto())
+        //Deixei inativa para mostrar a arma oposta a ativa, ou seja, a que você receberá quando pressionar o botão;
+        bool pistolaInativa = !Pistola.activeInHierarchy;
+        if (pistolaInativa)   
         {
-            var bala = this.reservaDeBalas.PegarObjeto();
-            bala.transform.position = CanoDaArma.transform.position;
-            bala.transform.rotation = CanoDaArma.transform.rotation;
+            nomeArma.text = "Pistola";
+        }
+        else
+        {
+            nomeArma.text = "MPSMG";
         }
     }
 }
