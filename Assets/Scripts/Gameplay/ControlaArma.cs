@@ -8,7 +8,10 @@ public class ControlaArma : MonoBehaviour
     public ReservaExtensivel reservaDeBalas;
     public GameObject CanoDaArma;
     public AudioClip SomDoTiro;
-
+    [SerializeField]
+    private GameObject Pistola;
+    [SerializeField]
+    private GameObject MPSMG;
     private void Update()
     {
         var toquesNaTela = Input.touches;
@@ -22,7 +25,11 @@ public class ControlaArma : MonoBehaviour
         }
       
     }
-
+    public void TrocarArma()
+    {
+        Pistola.SetActive(!Pistola.activeInHierarchy);
+        MPSMG.SetActive(!MPSMG.activeInHierarchy);
+    }
     private void Atirar()
     {
         if (this.reservaDeBalas.TemObjeto())

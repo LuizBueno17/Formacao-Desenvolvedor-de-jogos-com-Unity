@@ -10857,12 +10857,12 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 11500000, guid: cb7466cd954ad7842a4f967d78814a5d, type: 3}
-        m_MethodName: 
+      - m_Target: {fileID: 1665214585}
+        m_MethodName: TrocarArma
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -11890,6 +11890,16 @@ PrefabInstance:
       propertyPath: reservaDeBalas
       value: 
       objectReference: {fileID: 350134857}
+    - target: {fileID: 114240463659201816, guid: 4b3bb44effa49480d8d18049684cc33a,
+        type: 3}
+      propertyPath: Pistola
+      value: 
+      objectReference: {fileID: 1220738393}
+    - target: {fileID: 114240463659201816, guid: 4b3bb44effa49480d8d18049684cc33a,
+        type: 3}
+      propertyPath: MPSMG
+      value: 
+      objectReference: {fileID: 1602752518}
     - target: {fileID: 114343259226597284, guid: 4b3bb44effa49480d8d18049684cc33a,
         type: 3}
       propertyPath: somDaPassada
@@ -12011,7 +12021,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1235792621176908, guid: 4b3bb44effa49480d8d18049684cc33a, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1235792621176908, guid: 4b3bb44effa49480d8d18049684cc33a, type: 3}
       propertyPath: m_TagString
@@ -12191,6 +12201,12 @@ PrefabInstance:
 --- !u!4 &1206316407 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4756412272145002, guid: 4b3bb44effa49480d8d18049684cc33a,
+    type: 3}
+  m_PrefabInstance: {fileID: 1178924254}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1220738393 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1235792621176908, guid: 4b3bb44effa49480d8d18049684cc33a,
     type: 3}
   m_PrefabInstance: {fileID: 1178924254}
   m_PrefabAsset: {fileID: 0}
@@ -14448,7 +14464,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1789961188982158, guid: 088ac68bbfcc04c02b05b114e6b30b2d, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1789961188982158, guid: 088ac68bbfcc04c02b05b114e6b30b2d, type: 3}
       propertyPath: m_TagString
@@ -14464,7 +14480,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4030545522140682, guid: 088ac68bbfcc04c02b05b114e6b30b2d, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.235
+      value: 0.139
       objectReference: {fileID: 0}
     - target: {fileID: 4030545522140682, guid: 088ac68bbfcc04c02b05b114e6b30b2d, type: 3}
       propertyPath: m_LocalRotation.x
@@ -14688,6 +14704,12 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1586845853}
   m_CullTransparentMesh: 0
+--- !u!1 &1602752518 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1789961188982158, guid: 088ac68bbfcc04c02b05b114e6b30b2d,
+    type: 3}
+  m_PrefabInstance: {fileID: 1542248240}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1607952984
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -14920,6 +14942,18 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 1178924254}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1665214585 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 114240463659201816, guid: 4b3bb44effa49480d8d18049684cc33a,
+    type: 3}
+  m_PrefabInstance: {fileID: 1178924254}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1665214584}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d9dab9364d19d0f47af0d0f3f697db6d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &1665214586 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 114343259226597284, guid: 4b3bb44effa49480d8d18049684cc33a,
