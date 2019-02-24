@@ -3751,6 +3751,12 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1663743800}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &632375969 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1017167644266204, guid: 4b3bb44effa49480d8d18049684cc33a,
+    type: 3}
+  m_PrefabInstance: {fileID: 1178924254}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &649875634 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4656246329960846, guid: bf4e53320739441f58d231c2ee884b66,
@@ -11895,6 +11901,11 @@ PrefabInstance:
       propertyPath: MPSMG
       value: 
       objectReference: {fileID: 1602752518}
+    - target: {fileID: 114240463659201816, guid: 4b3bb44effa49480d8d18049684cc33a,
+        type: 3}
+      propertyPath: nomeArma
+      value: 
+      objectReference: {fileID: 1953319100}
     - target: {fileID: 114343259226597284, guid: 4b3bb44effa49480d8d18049684cc33a,
         type: 3}
       propertyPath: somDaPassada
@@ -12016,7 +12027,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1235792621176908, guid: 4b3bb44effa49480d8d18049684cc33a, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1235792621176908, guid: 4b3bb44effa49480d8d18049684cc33a, type: 3}
       propertyPath: m_TagString
@@ -12205,6 +12216,22 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 1178924254}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1220738395
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1220738393}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 656b07af674653540973f191a85e3956, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  reservaDeBalas: {fileID: 350134857}
+  CanoDaArma: {fileID: 632375969}
+  SomDoTiro: {fileID: 8300000, guid: 8cf10233e072c8f4991a094bb6b9eba8, type: 3}
+  tempoEntreTiros: 1
 --- !u!1001 &1234466220
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -13151,8 +13178,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SliderVidaJogador: {fileID: 727151013}
-  PainelDeGameOver: {fileID: 1518546017}
-  TextoTempoDeSobrevivencia: {fileID: 1586845855}
   TextoPontuacaoMaxima: {fileID: 1985104275}
   TextoQuantidadeDeZumbisMortos: {fileID: 417459470}
   TextoChefeAparece: {fileID: 1915470987}
@@ -14458,7 +14483,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1789961188982158, guid: 088ac68bbfcc04c02b05b114e6b30b2d, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1789961188982158, guid: 088ac68bbfcc04c02b05b114e6b30b2d, type: 3}
       propertyPath: m_TagString
@@ -14704,6 +14729,22 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 1542248240}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1602752519
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1602752518}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 656b07af674653540973f191a85e3956, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  reservaDeBalas: {fileID: 350134857}
+  CanoDaArma: {fileID: 632375969}
+  SomDoTiro: {fileID: 8300000, guid: 7cfb467c2822d094babb16f0472c2dce, type: 3}
+  tempoEntreTiros: 0.2
 --- !u!1001 &1607952984
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -16681,7 +16722,7 @@ GameObject:
   - component: {fileID: 1953319101}
   - component: {fileID: 1953319100}
   m_Layer: 5
-  m_Name: Text
+  m_Name: NomeArma
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
