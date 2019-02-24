@@ -6,7 +6,7 @@ public class GeradorZumbis : MonoBehaviour {
     [SerializeField]
     private ReservaFixa reserva;
     private float contadorTempo = 0;
-    public float TempoGerarZumbi = 1;
+    public VariavelCompartilhadaFloat TempoGerarZumbi;
     public LayerMask LayerZumbi;
     private float distanciaDeGeracao = 3;
     private float DistanciaDoJogadorParaGeracao = 20;
@@ -32,7 +32,7 @@ public class GeradorZumbis : MonoBehaviour {
         {
             contadorTempo += Time.deltaTime;
 
-            if (contadorTempo >= TempoGerarZumbi)
+            if (contadorTempo >= TempoGerarZumbi.valor)
             {
                 StartCoroutine(GerarNovoZumbi());
                 contadorTempo = 0;
