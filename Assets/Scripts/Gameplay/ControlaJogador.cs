@@ -9,7 +9,6 @@ public class ControlaJogador : MonoBehaviour, IMatavel, ICuravel
 
     private Vector3 direcao;
     public LayerMask MascaraChao;
-    public GameObject TextoGameOver;
     public ControlaInterface scriptControlaInterface;
     public AudioClip SomDeDano;
     private MovimentoJogador meuMovimentoJogador;
