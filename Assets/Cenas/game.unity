@@ -20124,6 +20124,10 @@ PrefabInstance:
       propertyPath: reservaDeBalas
       value: 
       objectReference: {fileID: 350134857}
+    - target: {fileID: 1665214593, guid: 1360d3e8c2227f74587d777c6ef1a7ff, type: 3}
+      propertyPath: VidaInicial
+      value: 100
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1360d3e8c2227f74587d777c6ef1a7ff, type: 3}
 --- !u!1001 &818562805865362479
@@ -20276,6 +20280,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 0}
+      propertyPath: sobrescreverExiste
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 987321325181565674, guid: 4171fca255cbe194590cd1d9800a937e,
         type: 3}
       propertyPath: m_Name
@@ -20386,14 +20402,6 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 0}
-      propertyPath: sobrescreverExiste
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 0}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 987321325074372106, guid: 4171fca255cbe194590cd1d9800a937e,
         type: 3}
       propertyPath: m_AnchorMax.x
@@ -20414,9 +20422,15 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1665214585}
-    - target: {fileID: 0}
-      propertyPath: m_Enabled
-      value: 0
+    - target: {fileID: 987321325800114845, guid: 4171fca255cbe194590cd1d9800a937e,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 987321325800114845, guid: 4171fca255cbe194590cd1d9800a937e,
+        type: 3}
+      propertyPath: m_Name
+      value: SliderVidaJogador
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4171fca255cbe194590cd1d9800a937e, type: 3}
