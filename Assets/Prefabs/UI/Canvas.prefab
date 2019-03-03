@@ -324,8 +324,6 @@ GameObject:
   - component: {fileID: 987321325181565672}
   - component: {fileID: 987321325181565675}
   - component: {fileID: 987321325181565671}
-  - component: {fileID: 987321325181565669}
-  - component: {fileID: 987321325181565668}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -435,31 +433,6 @@ MonoBehaviour:
   TextoQuantidadeDeZumbisMortos: {fileID: 987321326560433712}
   TextoChefeAparece: {fileID: 987321325104627637}
   botaoTrocaArma: {fileID: 987321326059245603}
---- !u!114 &987321325181565669
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 987321325181565674}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 632eed1ce8588564e9488b2f358266eb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &987321325181565668
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 987321325181565674}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 49dbffcbb493c3c42b13565d65d99860, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  sobrescreverExiste: 0
 --- !u!1 &987321325270875108
 GameObject:
   m_ObjectHideFlags: 0

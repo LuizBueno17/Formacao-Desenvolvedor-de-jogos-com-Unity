@@ -20051,6 +20051,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Jogador
       objectReference: {fileID: 0}
+    - target: {fileID: 387736874523903575, guid: 1360d3e8c2227f74587d777c6ef1a7ff,
+        type: 3}
+      propertyPath: nomeArma
+      value: 
+      objectReference: {fileID: 1953319100}
     - target: {fileID: 352469109520782575, guid: 1360d3e8c2227f74587d777c6ef1a7ff,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -20111,11 +20116,6 @@ PrefabInstance:
       propertyPath: scriptControlaInterface
       value: 
       objectReference: {fileID: 1320272345}
-    - target: {fileID: 387736874523903575, guid: 1360d3e8c2227f74587d777c6ef1a7ff,
-        type: 3}
-      propertyPath: nomeArma
-      value: 
-      objectReference: {fileID: 1953319100}
     - target: {fileID: 1220738395, guid: 1360d3e8c2227f74587d777c6ef1a7ff, type: 3}
       propertyPath: reservaDeBalas
       value: 
@@ -20386,10 +20386,13 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 987321325181565668, guid: 4171fca255cbe194590cd1d9800a937e,
-        type: 3}
+    - target: {fileID: 0}
       propertyPath: sobrescreverExiste
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: m_Enabled
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 987321325074372106, guid: 4171fca255cbe194590cd1d9800a937e,
         type: 3}
@@ -20411,6 +20414,10 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1665214585}
+    - target: {fileID: 0}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4171fca255cbe194590cd1d9800a937e, type: 3}
 --- !u!1001 &996814340240557774
