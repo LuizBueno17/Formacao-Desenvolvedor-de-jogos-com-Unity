@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class PassarDeFase : MonoBehaviour
+public class TrocaCena : MonoBehaviour
 {
     private GameObject jogador;
     [SerializeField]
@@ -19,4 +19,13 @@ public class PassarDeFase : MonoBehaviour
             SceneManager.LoadScene(cena);
         }
     }
+    //public void TrocarCena()
+    //{
+    //    StartCoroutine(MudarCena(cena));
+    //}
+    //IEnumerator MudarCena(string name)
+    //{
+    //    yield return new WaitForSecondsRealtime(0.3f);
+    //    SceneManager.LoadScene(name);
+    //}
 }
